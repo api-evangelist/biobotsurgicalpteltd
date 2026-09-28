@@ -1,0 +1,29 @@
+generated: '2026-09-28'
+method: searched
+source: https://biobotsurgical.com/privacy-policy
+signals:
+  data_subject_request:
+    - url: https://biobotsurgical.com/privacy-policy
+      section: null
+      note: Provides data subject rights for access, correction, erasure and data portability.
+      evidence:
+        - source: https://biobotsurgical.com/privacy-policy
+          http_status: 200
+          fetched: /tmp/privacy.html
+          quote: "You have a number of rights with regard to the processing of your Personal Data , each as per the conditions defined in applicable law, such as the right to have access to your Personal Data , to have them corrected, erased or handed over."
+  subprocessors:
+    - url: https://biobotsurgical.com/privacy-policy
+      note: Discloses sharing of data with service providers and other third parties.
+      evidence:
+        - source: https://biobotsurgical.com/privacy-policy
+          http_status: 200
+          fetched: /tmp/privacy.html
+          quote: "We transfer your Personal Data to our service providers, and, in accordance with applicable law, other governmental authorities, courts, external advisors, and similar third parties, some of the aforementioned recipients located in jurisdictions outside the EU."
+  data_retention:
+    - url: https://biobotsurgical.com/privacy-policy
+      note: States retention period and deletion policy.
+      evidence:
+        - source: https://biobotsurgical.com/privacy-policy
+          http_status: 200
+          fetched: /tmp/privacy.html
+          quote: "Your Personal Data will be deleted once they are no longer needed for the purposes motivating their original collection or as required by applicable law."

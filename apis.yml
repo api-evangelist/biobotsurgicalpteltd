@@ -1,23 +1,76 @@
 aid: biobotsurgicalpteltd
+
 name: Biobotsurgicalpteltd
-description: 'Biobotsurgicalpteltd is a company surfaced via the API Evangelist harvest backlog (source:
-  secondary-market) and added to the network as a stub for full-pipeline profiling.'
+
+image: https://biobotsurgical.com/wp-content/uploads/2024/02/Biobot_Logo_WEB_BLACK.svg
+
+description: 'Biobot Surgical Pte Ltd is a Singapore‑based medical technology company focused on robotic‑assisted prostate biopsy and treatment solutions. Their flagship Mona Lisa system provides sub‑millimetre accuracy for transperineal procedures, aiming to improve cancer detection and patient outcomes. With regulatory clearances across the US, EU, China and Australia, the company reports over 23,000 procedures performed worldwide and a growing pipeline of new indications and digital health services.'
+
 url: https://raw.githubusercontent.com/api-evangelist/biobotsurgicalpteltd/refs/heads/main/apis.yml
+
 x-type: company
+
 x-source: harvest:secondary-market
-x-tier: stub
-x-tier-reason: harvest
+
+x-tier: profiled
+x-tier-reason: enrichment pass 2026-09-28 (modular-v1; was harvest)
+
 specificationVersion: '0.20'
+
 created: '2026-09-28'
+
 modified: '2026-09-28'
+
 tags:
 - Company
-apis: []
+- Medical
+- Robotics
+- Healthcare
+- Singapore
+
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+
 common:
+- type: Conformance
+  url: conformance/biobotsurgicalpteltd-conformance.yml
+- type: Hosts
+  url: hosts/biobotsurgicalpteltd-hosts.yml
+- type: DomainSecurity
+  url: security/biobotsurgicalpteltd-domain-security.yml
 - type: Website
-  url: https://equityzen.com/company/biobotsurgicalpteltd
+  url: https://biobotsurgical.com
+- type: Documentation
+  url: https://biobotsurgical.com/technology/
+- type: About
+  url: https://biobotsurgical.com/about/
+- type: Contact
+  url: https://biobotsurgical.com/contact/
+- type: PrivacyPolicy
+  url: https://biobotsurgical.com/privacy-policy
+- type: Facebook
+  url: https://www.facebook.com/biobotsurgical
+- type: Twitter
+  url: https://twitter.com/biobotmonalisa
+- type: LinkedIn
+  url: https://www.linkedin.com/company/biobot-surgical-pte-ltd/
+
+apis: []
+
+x-coverage:
+  state: unreadable
+  reason: js-rendered-docs
+  detail: Documentation pages are rendered via JavaScript, preventing machine-readable spec discovery.
+  evidence:
+    - url: https://biobotsurgical.com/technology/
+      status: 200
+  checked: '2026-09-28'
+x-enrichment:
+  date: '2026-09-28'
+  status: enriched
+  artifacts_added: 7
+  pass: modular-v1
+  engine: identity=local,contract=local,surfaces=local,docs=local,regulatory=local
